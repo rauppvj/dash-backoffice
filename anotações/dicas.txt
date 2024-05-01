@@ -1,0 +1,34 @@
+Para fazer um botão em html de forma que abra o link em uma aba nova utilizar o seguinte código:
+
+<button onclick="window.open('https://instagram.com', '_blank')">Teste</button>
+
+cor legalzinha ##FBF3E4 para background
+
+=======================================================================================
+CÓDIGO PARA TELA DE LOADING QUANDO ESTIVER CONSTRUINDO A PÁGINA AINDA
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Manuteção</title>
+    <link rel="stylesheet" href="estilos/loading.css">
+    <link rel="shortcut icon" href="imagens/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="terminal-loader">
+        <div class="terminal-header">
+          <div class="terminal-title">Status</div>
+          <div class="terminal-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+          </div>
+        </div>
+        <div class="text">Loading...</div>
+      </div>
+</body>
+</html>
+
+========================================================================================

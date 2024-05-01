@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomalias</title>
+    <link rel="shortcut icon" href="imagens/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="gd">
+            Gerenciamento Diário
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    
+    <main>
+            <section>
+                <h2 id="gd1">PREENCHA OS DADOS</h2>
+                <form id="anomalia-form" method="post" action="/submit">
+                    
+                    <!-- Seletor de data -->
+                    <label for="date">Data</label>
+                    <input type="date" id="date" name="date" required><br>
+
+                    <label for="users-list">
+                        BackOffice
+                    </label>
+
+                    <!-- Lista Suspensa com os BackOffices -->
+                    <select name="users-list" id="users-list">
+                        <option value="Kewin">
+                            Kewin
+                        </option>
+
+                        <option value="Luiz">
+                            Luiz
+                        </option>
+
+                        <option value="Vinicius">
+                            Vinicius
+                        </option>
+
+                        <option value="William">
+                            William
+                        </option>
+
+                        <option value="Tiago">
+                            Tiago
+                        </option>
+
+                        <option value="João Victor">
+                            João Victor
+                        </option>
+                    </select><br>
+
+                    <!-- Quantidade de assistências realizadas -->
+                    <input type="number" class="num" id="assistances" name="assistances" placeholder="Assistências" required><br>
+                    <!-- Tempo para as Assistências -->
+                    <label for="time">
+                        Tempo Total
+                    </label>
+                    <input type="time" id="time" name="time" required><br>
+
+                    <!-- Obras Novas -->
+                    <input type="number" class="num" id="new-works" name="new-works" placeholder="Obras Novas" required><br>
+
+                    <!-- Obras Continuação -->
+                    <input type="number" class="num" id="cont-works" name="cont-works" placeholder="Obras Continuação" required><br>
+
+                    <!-- Liberadas com Pendência -->
+                    <input type="number" class="num" id="pending-works" name="pending-works" placeholder="Liberadas C/P" required><br>
+
+                    <!-- Liberadas sem Pendência -->
+                    <input type="number" class="num" id="released-works" name="released-works" placeholder="Liberadas S/P" required><br>
+
+                    <!-- Botão de cadastro -->
+                    <button id="cadastro-gd" type="submit">
+                        Salvar Dados
+                    </button>
+
+                </form>
+
+            </section>
+        
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/rauppvj">Vinicius Raupp</a></p>
+    </footer>
+    
+</body>
+</html>
