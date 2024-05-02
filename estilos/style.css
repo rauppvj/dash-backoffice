@@ -21,6 +21,63 @@
     appearance: none;
 }
 
+/* Configuração dos inputs */
+#new-works,
+#cont-works,
+#pending-works,
+#released-works,
+#assistances,
+#users-list,
+#date
+
+{
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center;
+  height: 20px;
+  width: 169px;
+  min-width: 169px;
+  min-width: 20px;
+  margin: 10px;
+  font-family: var(--fonte-00);
+  font-weight: bold;
+}
+
+#date {
+  cursor: pointer;
+}
+
+/* Configuração do total time label e input */
+.total-time,
+#dropdown-list-users,
+#datetime,
+.label
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  font-family: var(--fonte-01);
+  font-weight: bolder;
+  align-items: center;
+}
+
+
+
+#time
+
+{
+  width: 169px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+
+
 body {
     background: rgb(0,51,149);
     background: radial-gradient(circle, rgba(0,51,149,1) 0%, rgba(81,189,217,1) 100%);
@@ -87,7 +144,7 @@ main {
 button#cadastro-gd {
     border-radius: 10px;
     height: 40px;
-    width: 50%;
+    width: 30%;
     text-align: center;
     color: black;
     padding: 0px;

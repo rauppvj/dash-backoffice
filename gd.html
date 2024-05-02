@@ -13,74 +13,89 @@
             Gerenciamento Diário
         </h1>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" id="btnHome">
+                Home <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                  </svg>
+            </a>
         </nav>
     </header>
     
     <main>
-            <section>
+            <section id="form-gd">
                 <h2 id="gd1">PREENCHA OS DADOS</h2>
                 <form id="anomalia-form" method="post" action="/submit">
                     
                     <!-- Seletor de data -->
-                    <label for="date">Data</label>
-                    <input type="date" id="date" name="date" required><br>
+                    <div id="datetime">
+                        <label for="date">Data</label>
+                        <input type="date" id="date" name="date" required><br>
+                    </div>
 
-                    <label for="users-list">
-                        BackOffice
-                    </label>
-
-                    <!-- Lista Suspensa com os BackOffices -->
-                    <select name="users-list" id="users-list">
-                        <option value="Kewin">
-                            Kewin
-                        </option>
-
-                        <option value="Luiz">
-                            Luiz
-                        </option>
-
-                        <option value="Vinicius">
-                            Vinicius
-                        </option>
-
-                        <option value="William">
-                            William
-                        </option>
-
-                        <option value="Tiago">
-                            Tiago
-                        </option>
-
-                        <option value="João Victor">
-                            João Victor
-                        </option>
-                    </select><br>
+                    <div id="dropdown-list-users">
+                        <label for="users-list">
+                            BackOffice
+                        </label>
+                        
+                        
+                        <!-- Lista Suspensa com os BackOffices -->
+                        <select name="users-list" id="users-list">
+                            <option value="">
+                                --
+                            </option>
+                            <option value="Kewin">
+                                Kewin
+                            </option>
+                            <option value="Luiz">
+                                Luiz
+                            </option>
+                            <option value="Vinicius">
+                                Vinicius
+                            </option>
+                            <option value="William">
+                                William
+                            </option>
+                            <option value="Tiago">
+                                Tiago
+                            </option>
+                            <option value="João Victor">
+                                João Victor
+                            </option>
+                        </select><br>
+                    </div>
 
                     <!-- Quantidade de assistências realizadas -->
-                    <input type="number" class="num" id="assistances" name="assistances" placeholder="Assistências" required><br>
-                    <!-- Tempo para as Assistências -->
-                    <label for="time">
-                        Tempo Total
+                    <label for="assistances" class="label">
+                        Assistências
                     </label>
-                    <input type="time" id="time" name="time" required><br>
+                    <input type="number" class="num" id="assistances" name="assistances" placeholder="Total de AT's" required><br>
+                    
+                    <!-- Tempo para as Assistências -->
+                    <div class="total-time">
+                        <label for="time">
+                            Tempo Total
+                        </label>
+                        <input type="time" id="time" name="time" required><br>
+                    </div>
 
+                    <label for="new-works" class="label">
+                        Obras/Unidades
+                    </label>
                     <!-- Obras Novas -->
                     <input type="number" class="num" id="new-works" name="new-works" placeholder="Obras Novas" required><br>
-
                     <!-- Obras Continuação -->
                     <input type="number" class="num" id="cont-works" name="cont-works" placeholder="Obras Continuação" required><br>
-
                     <!-- Liberadas com Pendência -->
                     <input type="number" class="num" id="pending-works" name="pending-works" placeholder="Liberadas C/P" required><br>
-
                     <!-- Liberadas sem Pendência -->
                     <input type="number" class="num" id="released-works" name="released-works" placeholder="Liberadas S/P" required><br>
-
                     <!-- Botão de cadastro -->
                     <button id="cadastro-gd" type="submit">
-                        Salvar Dados
+                        Salvar Dados <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-substack" viewBox="0 0 16 16">
+                            <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
+                          </svg>
                     </button>
+                    
 
                 </form>
 
